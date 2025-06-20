@@ -1,0 +1,68 @@
+$color_1: #fff;
+$font-family_1: "Road Rage";
+$font-family_2: "Source Sans Pro", sans-serif;
+
+.hero {
+  display: flex;
+  position: relative;
+  height: 724px;
+  overflow: hidden;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    bottom: -20%;
+    left: -10%;
+    background-image: url("../../assets/pexels-anastasiya-vragova-67917411.jpg");
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    right: -10%;
+    background-image: url("../../assets/pexels-vojta-kovarik-32430901.jpg");
+  }
+}
+.hero-logo {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color_1;
+  text-align: center;
+  font-family: $font-family_1;
+  font-size: 96px;
+  line-height: 0.8;
+  z-index: 1;
+}
+.hero-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $color_1;
+  text-align: center;
+  font-size: 24px;
+  font-family: $font-family_2;
+  width: 439px;
+  z-index: 1;
+}
+.svg-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Адаптивний Хедер з боковим меню та Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&family=Poppins:wght@400;600&family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="../dist/css/style.css">
+
+</head>
+<body>
+
+<header>
+  <div class="logo">PROJECT</div>
+  <nav class="menu">
+    <ul class="list">
+      <li><a href="#">PROJECTS</a></li>
+      <li><a href="#">ABOUT US</a></li>
+      <li><a href="#">STORIES</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <button type="button" class="menu-toggle" aria-label="Відкрити меню">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
+
+<aside class="mobile-menu">
+  <ul class="mobile-menu-list">
+    <li><a href="#">PROJECTS</a></li>
+    <li><a href="#">ABOUT US</a></li>
+    <li><a href="#">STORIES</a></li>
+    <li><a href="#">CONTACT</a></li>
+  </ul>
+</aside>
+
+  <div class="overlay"></div>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-logo">
+<a href="#" aria-label="Головна сторінка">
+  <i class="fas fa-plane"></i>
+</a>
+      </div>
+      <div class="svg-container">
+        <a href="#"><img class="svg-icon" src="./assets/travel_logo@3x 3.svg" alt="SVG Logo" /></a>
+      </div>
+      <div>
+        <h1 class="hero-logo">Your<br><span>Headline</span><br>Here</h1>
+        <p class="hero-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h1>THIS IS THE SECTION HEADLINE,<br />CONTINUES TO TWO LINES</h1>
+    <div class="subtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.
+    </div>
+    <div class="content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <p>
+        Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="read-more">READ MORE</div>
+  </section>
+<article>
+  <section class="section2">
+    <div class="contennt">
+      <h1>Learn More<br>About Our Culture...</h1>
+<div class="svg-container2">
+  <button class="svg-icon2" type="button" aria-label="Learn More" onclick="window.location.href='#'">
+    <img src="./assets/Learn-more__button.svg" alt="Learn More" />
+  </button>
+</div>
+
+
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+  </section>
+</article>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <div class="i"><p>123 Street, Anytown, USA 12345</p></div>
+      <p><a href="mailto:hello@website.com">hello@website.com</a></p>
+    </div>
+    <div class="footer-center">
+      <a href="#"><img src="./assets/travel_logo@3x 4.svg" alt="Logo" class="footer-logo" /></a>
+      <p class="footer-project">PROJECT</p>
+    </div>
+    <div class="footer-right">
+      <p>© 2021 Project. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const btn = document.querySelector('.menu-toggle');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const overlay = document.querySelector('.overlay');
+
+    function toggleMenu() {
+      const isOpen = mobileMenu.classList.toggle('open');
+      overlay.classList.toggle('active', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+    }
+
+    btn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+  </script>
+</body>
+</html>

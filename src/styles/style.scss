@@ -1,0 +1,18 @@
+// Підключаємо зовнішні CSS‑ресурси для шрифтів та іконок
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&family=Poppins:wght@400;600&display=swap");
+@import url("https://kit.fontawesome.com/a076d05399.js");
+
+// Підключаємо ваші SCSS‑partials через modern @use
+@use "partials/header" as *;
+@use "partials/menu" as *;
+@use "partials/text-section" as *;
+@use "partials/video-section" as *;
+@use "partials/footer" as *;
+
+// Якщо у вас є окремі mobile‑версії – підключаємо їх також
+@use "partials/header.mobile" as *;
+@use "partials/menu.mobile" as *;
+@use "partials/text-section.mobile" as *;
+@use "partials/video-section.mobile" as *;
+@use "partials/footer.mobile" as *;

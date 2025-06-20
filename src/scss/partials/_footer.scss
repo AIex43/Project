@@ -1,0 +1,54 @@
+$color_1: #ccc;
+$color_2: inherit;
+$font-family_1: sans-serif;
+$background-color_1: #285048;
+
+.footer {
+  background-color: $background-color_1;
+  color: $color_1;
+  padding: 20px 40px;
+  font-family: $font-family_1;
+  height: 200px;
+  padding: 35px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+.footer-left {
+  min-width: 250px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 16px;
+  width: 142px;
+}
+.footer-right {
+  min-width: 250px;
+  margin: 10px 0;
+  text-align: left;
+  font-size: 16px;
+  width: 142px;
+}
+.footer-logo {
+  width: 150px;
+  height: 90px;
+  height: auto;
+  margin: 0 auto;
+}
+.footer-project {
+  margin-top: 8px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.i {
+  margin-bottom: 23px;
+  width: 150px;
+}
+a[href^="mailto:"] {
+  color: $color_2;
+  cursor: pointer;
+}

@@ -1,0 +1,52 @@
+.section2 {
+  position: relative;
+  background: url("../../assets/pexels-pixabay-4149161.jpg") center/cover
+    no-repeat;
+  height: 637px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 44px 20px;
+}
+
+.section2 .contennt {
+  position: relative;
+  max-width: 800px;
+  z-index: 1;
+  color: white;
+}
+
+.section2 h1 {
+  font-family: "Staatliches";
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.svg-container2 {
+  margin-top: 70px;
+
+  justify-content: center;
+  text-align: center;
+}
+
+.section2 p {
+  text-align: center;
+
+  font-size: 24px;
+  font-family: "Source Sans Pro", sans-serif;
+  width: 439px;
+  margin-top: 90px;
+  z-index: 1;
+  width: 524px;
+}
+
+.svg-container2,
+.svg-container2 button.svg-icon2 {
+  background: transparent;
+  border: none; /* якщо є бордер, прибрати */
+  box-shadow: none; /* прибрати тіні */
+}
+
+.svg-icon2 {
+  cursor: pointer;
+}

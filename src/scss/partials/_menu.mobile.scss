@@ -1,0 +1,48 @@
+$color_1: #fff;
+$font-family_1: "Road Rage";
+
+/* 1) Прибираємо “двійний” фон, заданий зверху */
+/* 2) Створюємо псевдо‑елемент з потрібним фільтром */
+@media (max-width: 768px) {
+  .hero {
+    &::after {
+      display: none;
+    }
+    background: none;
+    position: relative;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: url("../../assets/pexels-vojta-kovarik-32430901.jpg") center
+        no-repeat;
+      background-size: cover;
+      filter: brightness(50%);
+      z-index: -1;
+      width: 100%;
+    }
+  }
+  .hero-logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: $color_1;
+    text-align: center;
+    font-family: $font-family_1;
+    font-size: 75px;
+    line-height: 0.8;
+  }
+  .hero-text {
+    top: 75%;
+    width: 332px;
+  }
+  .svg-icon {
+    width: 316px;
+    height: 142px;
+  }
+  .svg-container {
+    top: 10%;
+  }
+}

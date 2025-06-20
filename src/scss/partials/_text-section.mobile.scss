@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+  .section {
+    padding: 20px;
+    height: 960px;
+    h1 {
+      font-size: 48px;
+    }
+    .content {
+      flex-direction: column;
+      text-align: justify;
+    }
+    .read-more {
+      text-align: center;
+      display: block;
+    }
+  }
+}
