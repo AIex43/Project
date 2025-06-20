@@ -286,8 +286,8 @@ header {
 .svg-container2,
 .svg-container2 button.svg-icon2 {
   background: transparent;
-  border: none; /* якщо є бордер, прибрати */
-  box-shadow: none; /* прибрати тіні */
+  border: none; 
+  box-shadow: none; 
 }
 
 .svg-icon2 {
@@ -351,20 +351,7 @@ a[href^="mailto:"] {
   cursor: pointer;
 }
 
-/* Приховуємо десктоп-меню, показуємо бургер */
-/* Бокове меню */
-/* Напівпрозорий оверлей */
-/* Скидаємо стилі списку */
-/* Вертикальний стік пунктів */
-/* Відсутній відступ у останнього елемента */
-/* Розтягнути посилання на всю ширину і зручний паддінг */
-/* Скидаємо стилі списку */
-/* Вертикальний стік пунктів */
-/* Відсутній відступ у останнього елемента */
-/* Оновлений стиль для <a> */
-/* Псевдо-лінія (underline) */
-/* Показ підкреслення при hover/focus/current */
-/* Псевдо‑жирний ефект через масштаб та колір */
+
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -558,7 +545,7 @@ a[href^="mailto:"] {
     display: block;
   }
 }
-/* Mobile styles */
+
 @media (max-width: 768px) {
   .section2 {
     height: 600px;
@@ -574,7 +561,7 @@ a[href^="mailto:"] {
     height: 122px;
   }
 }
-/* Мобільна версія */
+
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
@@ -625,7 +612,7 @@ a[href^="mailto:"] {
 
 
 .read-more:hover {
-  transform: rotate(15deg); /* Поворот вправо */
+  transform: rotate(15deg); 
   background-color: white;
   color: black;
   border-color: black;
@@ -638,21 +625,21 @@ a[href^="mailto:"] {
   transform-origin: center center;
   backface-visibility: hidden;
   perspective: 1000px;
-  transition: transform 0.5s ease; /* для плавності при знятті наведення */
+  transition: transform 0.5s ease; 
 }
 
-/* Анімація 3 обертів за 1 секунду */
+
 .svg-icon:hover {
   animation: rotateYMultiple 1s linear 1 forwards;
 }
 
-/* Ключові кадри для 3 обертів */
+
 @keyframes rotateYMultiple {
   from {
     transform: rotateY(0deg);
   }
   to {
-    transform: rotateY(1080deg); /* 360 * 3 = 1080 градусів */
+    transform: rotateY(1080deg);
   }
 }
 
@@ -667,7 +654,7 @@ a[href^="mailto:"] {
   display: inline-block;
 }
 
-/* При наведенні: інвертуємо кольори та обертаємо трохи */
+
 .svg-icon2:hover {
   filter: invert(1);
 
